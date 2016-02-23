@@ -5,7 +5,7 @@
 Name:           %{?scl_prefix}nodejs-cookie-jar
 Epoch:          1
 Version:        0.3.0
-Release:        2.2%{?dist}
+Release:        3.2%{?dist}
 Summary:        A cookie handling and cookie jar library for Node.js
 BuildArch:      noarch
 ExclusiveArch: %{nodejs_arches} noarch
@@ -54,6 +54,9 @@ rm -rf %buildroot
 %{nodejs_sitelib}/cookie-jar
 
 %changelog
+* Sun Feb 14 2016 Zuzana Svetlikova <zsvetlik@redhat.com> - 1:0.3.0-3.2
+- rebuilt
+
 * Fri Jan 10 2014 Tomas Hrcka <thrcka@redhat.com> - 1:0.3.0-3.2
 - Obsolete tobie-cookie with scl_prefix
 
